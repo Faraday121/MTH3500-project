@@ -74,9 +74,9 @@ void InputStudent() {
 	int matrix;
 	int score;
 
-	printf("Pls input matric number(from 100 to 999)£º\n");
+	printf("Pls input matric number(from 100 to 999)Â£Âº\n");
 	scanf("%d", &matrix);
-	printf("Pls input score£º(from 0 to 10)\n");
+	printf("Pls input scoreÂ£Âº(from 0 to 10)\n");
 	scanf("%d", &score);
 	printf("Matrix:%d,Score:%d", matrix, score);
 	
@@ -105,7 +105,7 @@ void InputStudent() {
 }
 void SearchStudent(){
 	int Inputid;
-	printf("Pls input the matric you want to search£º\n");
+	printf("Pls input the matric you want to searchÂ£Âº\n");
 	scanf("%d", &Inputid);
 
 	char* token;
@@ -121,7 +121,7 @@ void SearchStudent(){
 		token = strtok(NULL, ",");
 		i++;
 	}
-	for (i = 0; i < 10; i++) {
+	for (i = 0; i < Length; i++) {
 		if (t[i] == Inputid) {
 			printf("Student matrix is :%d\tThe score is :%d\n", t[i], t[i + 1]);
 			break;
@@ -233,7 +233,7 @@ void generate() {
 		token = strtok(NULL, ",");
 		i++;
 	}
-	for (i = 0; i < 10; i=i+2) {
+	for (i = 0; i < Length; i=i+2) {
 		if (t[i] != 0) {
 			printf("Student matrix is :%d\tThe score is :%d\n", t[i], t[i + 1]);
 		}
